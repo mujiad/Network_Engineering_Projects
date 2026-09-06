@@ -20,3 +20,24 @@ Technical Support
 Physical connections
 
 ![Project1](https://github.com/mujiad/Network_Engineering_Projects/blob/main/Small%20Office%20Network%20Configuration%20%E2%80%94%20Cisco%20Packet%20Tracer/Project1.png)
+
+## Cable connections
+
+- Use Copper Straight-Through cables:
+
+        R1 GigabitEthernet0/0 → SW1 GigabitEthernet0/1
+        ADMIN-PC1 → SW1 FastEthernet0/1
+        ADMIN-PC2 → SW1 FastEthernet0/2
+        TECH-PC1 → SW1 FastEthernet0/3
+        TECH-PC2 → SW1 FastEthernet0/4
+
+## 3. IP Addressing Plan
+| Device     | VLAN | IP Address    | Subnet Mask     | Default Gateway |
+|------------|------|---------------|-----------------|-----------------|
+| R1 VLAN 10 | 10   | 192.168.10.1  | 255.255.255.0   | —               |
+| R1 VLAN 20 | 20   | 192.168.20.1  | 255.255.255.0   | —               |
+| ADMIN-PC1  | 10   | 192.168.10.10 | 255.255.255.0   | 192.168.10.1    |
+| ADMIN-PC2  | 10   | 192.168.10.11 | 255.255.255.0   | 192.168.10.1    |
+| TECH-PC1   | 20   | 192.168.20.10 | 255.255.255.0   | 192.168.20.1    |
+| TECH-PC2   | 20   | 192.168.20.11 | 255.255.255.0   | 192.168.20.1    |
+

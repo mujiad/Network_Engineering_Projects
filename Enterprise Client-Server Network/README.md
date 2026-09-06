@@ -62,7 +62,7 @@ The objectives of this project are to:
                                                      File Server
 ```
 
-![Project2(https://github.com/mujiad/Network_Engineering_Projects/blob/main/Enterprise%20Client-Server%20Network/Project2.png)
+![Project2(https://github.com/mujiad/Enterprise Client-Server Network/Project2.png)
 ## Network Architecture
 
 - The network follows a hierarchical design consisting of:

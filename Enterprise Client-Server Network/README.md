@@ -10,27 +10,32 @@ The network uses a Cisco Layer 3 switch for internal routing and an edge router 
 
 ---
 
-## Project Objectives
+## Technologies and Concepts Used
 
-The objectives of this project are to:
+This project demonstrates the following networking technologies:
 
-- Design and configure an enterprise-style network infrastructure.
-- Implement VLAN segmentation for multiple departments.
-- Configure trunk links between switches.
-- Configure inter-VLAN routing using a Layer 3 switch.
-- Configure centralized DHCP services.
-- Implement DHCP relay using `ip helper-address`.
-- Configure DNS services for hostname resolution.
-- Configure HTTP and FTP services.
-- Connect and configure network printers.
-- Configure a Management VLAN for network device administration.
-- Configure SSH for secure remote access.
-- Configure an edge router for external network connectivity.
-- Configure default routing between the internal network and edge router.
-- Implement NAT/PAT to translate private IP addresses.
-- Test and verify network connectivity and services.
-
----
+IPv4 Addressing
+Subnetting
+VLANs
+Access Ports
+Trunking
+Layer 2 Switching
+Layer 3 Switching
+Switch Virtual Interfaces (SVIs)
+Inter-VLAN Routing
+Static Routing
+Default Routing
+DHCP
+DHCP Relay
+DNS
+HTTP
+FTP
+SSH
+NAT
+PAT
+Network Device Management
+Network Printers
+Network Troubleshooting
 
 # Network Topology
 
@@ -64,39 +69,105 @@ The objectives of this project are to:
 
 ![Project2](Project2.png) 
 
-## Network Architecture
+## Devices Used
+# Network Devices
+| Device                       | Quantity | Purpose                               |
+|------------------------------|----------|---------------------------------------|
+| Cisco 3560 Multilayer Switch | 1        | Core switching and inter-VLAN routing |
+| Cisco 2960 Switch            | 4        | Access switching                      |
+| Cisco Router                 | 1        | Edge routing and NAT/PAT              |
+| ISP Switch                   | 1        | External network simulation           |
 
-- The network follows a hierarchical design consisting of:
+## End Devices
+| Device              | Quantity |
+|---------------------|----------|
+| Administration PCs  | 3        |
+| IT PCs              | 3        |
+| Sales PCs           | 3        |
+| Network Printers    | 2        |
+| DHCP Server         | 1        |
+| DNS Server          | 1        |
+| Web Server          | 1        |
+| File Server         | 1        |
+| External Server     | 1        |
 
-Core Layer
-Access Layer
-Server Network
-Edge Network
-External Network
+## VLAN Configuration
 
-## Core Layer
-The Cisco 3560 Multilayer Switch acts as the core device and performs:
+The network is divided into multiple VLANs to separate departments and improve network organization and security.
+| VLAN | Name           | Network         | Default Gateway |
+|------|----------------|-----------------|-----------------|
+| 10   | ADMINISTRATION | 192.168.10.0/24 | 192.168.10.1    |
+| 20   | IT             | 192.168.20.0/24 | 192.168.20.1    |
+| 30   | SALES          | 192.168.30.0/24 | 192.168.30.1    |
+| 40   | SERVERS        | 192.168.40.0/24 | 192.168.40.1    |
+| 50   | MANAGEMENT     | 192.168.50.0/24 | 192.168.50.1    |
 
-VLAN routing
-Inter-VLAN routing
-Default gateway services
-DHCP relay
-Routing to the edge router
+## IP Addressing Scheme
+Administration Department
 
-## Access Layer
-Cisco 2960 switches connect end-user devices including:
+Network: 192.168.10.0/24
+| Device                 | IP Address     |
+|------------------------|----------------|
+| VLAN 10 Gateway        | 192.168.10.1   |
+| Administration Printer | 192.168.10.50  |
+| Administration PCs     | DHCP           |
 
-PCs
-Printers
-Servers
+## IT Department
 
-The access switches use VLANs and trunk links to communicate with the Layer 3 core switch.
+Network: 192.168.20.0/24
+| Device        | IP Address     |
+|---------------|----------------|
+| VLAN 20 Gateway | 192.168.20.1  |
+| IT Printer     | 192.168.20.50 |
+| IT PCs         | DHCP           |
 
-## Edge Layer
+## Sales Department
 
-The Cisco edge router provides:
+Network: 192.168.30.0/24
+| Device       | IP Address     |
+|--------------|----------------|
+| VLAN 30 Gateway | 192.168.30.1 |
+| Sales PCs     | DHCP           |
 
-Connectivity to the external network
-Default routing
-NAT
-PAT
+
+## Server Network
+
+Network: 192.168.40.0/24
+| Device      | IP Address     |
+|-------------|----------------|
+| VLAN 40 Gateway | 192.168.40.1 |
+| DHCP Server  | 192.168.40.10 |
+| DNS Server   | 192.168.40.11 |
+| Web Server   | 192.168.40.20 |
+| File Server  | 192.168.40.30 |
+
+## Management Network
+
+Network: 192.168.50.0/24
+| Device      | IP Address     |
+|-------------|----------------|
+| VLAN 50 Gateway | 192.168.50.1 |
+| SW-ADMIN     | 192.168.50.10 |
+| SW-IT        | 192.168.50.20 |
+| SW-SALES     | 192.168.50.30 |
+| SW-SERVER    | 192.168.50.40 |
+
+## Edge Router Network
+
+The Layer 3 switch and edge router communicate through a dedicated point-to-point network.
+
+Network: 10.0.0.0/30
+| Device  | Interface            | IP Address |
+|---------|----------------------|------------|
+| L3-SW1  | Routed Port          | 10.0.0.1   |
+| R1-EDGE | GigabitEthernet0/0   | 10.0.0.2   |
+
+## External Network
+
+The external network simulates an Internet or ISP environment.
+
+Network: 203.0.113.0/24
+| Device          | IP Address    |
+|-----------------|---------------|
+| R1-EDGE G0/1    | 203.0.113.1   |
+| External Server | 203.0.113.10  |

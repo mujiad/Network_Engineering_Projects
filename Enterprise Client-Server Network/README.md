@@ -62,7 +62,7 @@ The objectives of this project are to:
                                                      File Server
 ```
 
-![Project2](Project2.png)
+![Project2](Project2.png) 
 
 ## Network Architecture
 

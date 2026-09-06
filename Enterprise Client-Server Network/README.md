@@ -35,7 +35,7 @@ The network uses a Cisco Layer 3 switch for internal routing and an edge router 
   - PAT
   - Network Device Management
   - Network Printers
-  - Network Troubleshooting
+  - Network Troubleshooting 
 
 # Network Topology
 

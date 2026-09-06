@@ -12,30 +12,30 @@ The network uses a Cisco Layer 3 switch for internal routing and an edge router 
 
 ## Technologies and Concepts Used
 
-This project demonstrates the following networking technologies:
+- This project demonstrates the following networking technologies:
 
-IPv4 Addressing
-Subnetting
-VLANs
-Access Ports
-Trunking
-Layer 2 Switching
-Layer 3 Switching
-Switch Virtual Interfaces (SVIs)
-Inter-VLAN Routing
-Static Routing
-Default Routing
-DHCP
-DHCP Relay
-DNS
-HTTP
-FTP
-SSH
-NAT
-PAT
-Network Device Management
-Network Printers
-Network Troubleshooting
+        IPv4 Addressing
+        Subnetting
+        VLANs
+        Access Ports
+        Trunking
+        Layer 2 Switching
+        Layer 3 Switching
+        Switch Virtual Interfaces (SVIs)
+        Inter-VLAN Routing
+        Static Routing
+        Default Routing
+        DHCP
+        DHCP Relay
+        DNS
+        HTTP
+        FTP
+        SSH
+        NAT
+        PAT
+        Network Device Management
+        Network Printers
+        Network Troubleshooting
 
 # Network Topology
 

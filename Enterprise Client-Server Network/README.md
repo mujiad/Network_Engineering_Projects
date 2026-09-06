@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project demonstrates the design and implementation of an enterprise-style network using Cisco Packet Tracer. The network supports multiple departments, centralized network services, inter-VLAN communication, secure device management, and connectivity to an external network.
+This project demonstrates the design and implementation of an enterprise-style network using Cisco Packet Tracer. The network supports multiple departments, centralized network services, inter-VLAN[...]
 
 The project was designed to simulate a small-to-medium business environment with separate networks for Administration, IT, Sales, Servers, and Network Management.
 
@@ -62,7 +62,8 @@ The objectives of this project are to:
                                                      File Server
 ```
 
-![Project2(https://github.com/mujiad/Enterprise Client-Server Network/Project2.png)
+![Project2](Project2.png)
+
 ## Network Architecture
 
 - The network follows a hierarchical design consisting of:

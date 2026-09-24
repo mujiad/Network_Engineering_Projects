@@ -2,6 +2,8 @@
 
 - A Cisco Packet Tracer project simulating the network infrastructure of a multi-site healthcare technology company.
 
+![Project3](PROJECT-3.png) 
+
 ## Technologies
         TCP/IP
         VLAN and Inter-VLAN Routing

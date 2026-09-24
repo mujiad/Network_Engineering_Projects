@@ -11,7 +11,7 @@
 
 ## Enterprise Client-Server Network with VLANs, DHCP, DNS, and NAT/PAT
 
-![Enterprise Client-Server Network](Enterprise%20Client-Server%20Network/Project2.png)
+![Enterprise Client-Server Network](Enterprise%20Client-Server%20Network/Project2.png) 
 
 ---
 

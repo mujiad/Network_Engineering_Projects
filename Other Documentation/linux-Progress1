@@ -1,0 +1,62 @@
+# Linux Network Services Lab
+
+## Objective
+
+Built an Ubuntu Server providing common network services
+used in network and NOC environments.
+
+## Environment
+
+- Ubuntu Server
+- VirtualBox
+- SSH
+- Apache
+- BIND9
+- UFW
+
+## Services
+
+| Service | Protocol | Port |
+|---------|----------|------|
+| SSH     | TCP      | 22   |
+| HTTP    | TCP      | 80   |
+| DNS     | TCP/UDP  | 53   |
+
+## Network Troubleshooting
+
+Used:
+
+- ip
+- ping
+- traceroute
+- ss
+- curl
+- dig
+- systemctl
+- journalctl
+
+## Troubleshooting Exercise
+
+Intentionally stopped Apache and diagnosed the
+website connectivity failure.
+
+Investigation:
+
+1. Checked service status
+2. Checked listening ports
+3. Tested HTTP with curl
+4. Checked service logs
+5. Restarted Apache
+6. Verified connectivity
+
+## Skills Demonstrated
+
+- Linux network administration
+- Network service deployment
+- SSH
+- DNS
+- Web services
+- Firewall configuration
+- Port analysis
+- Log analysis
+- Network troubleshooting

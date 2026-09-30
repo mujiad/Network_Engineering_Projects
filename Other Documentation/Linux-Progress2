@@ -1,0 +1,67 @@
+# Linux Remote Network Administration Lab
+
+## Objective
+
+Built a Linux-based remote administration environment
+using SSH to perform network troubleshooting and server
+administration.
+
+## Environment
+
+- Ubuntu Server
+- SSH
+- Bash
+- SCP
+- rsync
+- TCP/IP
+
+## Architecture
+
+Ubuntu Admin
+     |
+     | SSH
+     |
+Ubuntu Server
+
+## Skills Demonstrated
+
+- Remote SSH administration
+- SSH key authentication
+- Remote command execution
+- Secure file transfer
+- SCP
+- rsync
+- Network connectivity testing
+- Remote routing-table inspection
+- Remote port inspection
+- Remote log investigation
+- Bash scripting
+
+## Troubleshooting Scenario
+
+Simulated an SSH service outage by stopping the SSH
+service.
+
+Investigation:
+
+1. Tested server connectivity with ping
+2. Tested TCP port 22
+3. Checked SSH service status
+4. Identified the stopped SSH service
+5. Restarted SSH
+6. Verified remote connectivity
+
+## Tools
+
+- ssh
+- ssh-keygen
+- ssh-copy-id
+- scp
+- rsync
+- ping
+- nc
+- ip
+- ss
+- systemctl
+- journalctl
+- Bash
